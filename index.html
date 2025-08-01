@@ -2,32 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>SpotMusic</title>
+  <title>My Music App</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="app">
+    <!-- Sidebar -->
     <aside class="sidebar">
-      <h2>Archive</h2>
+      <h2>🎵 MyMusic</h2>
       <ul>
-        <li>Home</li>
-        <li>Search</li>
-        <li>Your Library</li>
-        <li>create</li>
+        <li>🏠 Home</li>
+        <li>🔍 Search</li>
+        <li>🎧 Your Library</li>
+        <li>⭐ Favorites</li>
+        <li>➕ Create</li>
       </ul>
     </aside>
 
-    <main class="main">
-      <header>
-        <h1>Welcome Back!</h1>
+    <!-- Main content -->
+    <main class="main-content">
+      <header class="top-nav">
+        <button class="tab active">All</button>
+        <button class="tab">Music</button>
+        <button class="tab">Podcasts</button>
+        <button class="tab">Albums</button>
       </header>
-      <section class="content">
-        <p>Feature your fanfics here!</p>
+
+      <section class="grid-section">
+        <h2>Recently Played</h2>
+        <div class="card-grid">
+          <div class="card">Album One</div>
+          <div class="card">Album Two</div>
+          <div class="card">Album Three</div>
+        </div>
       </section>
     </main>
 
-    <footer class="player">
-      <p>Currently playing: "just the two of us"</p>
+    <!-- Bottom bar -->
+    <footer class="now-playing">
+      <div class="track-info">
+        <strong>The Subway</strong> - Chappell Roan
+      </div>
+      <div class="player-controls">
+        ⏮️ ⏯️ ⏭️
+      </div>
     </footer>
   </div>
 </body>
